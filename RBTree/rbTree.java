@@ -38,6 +38,7 @@ class Tree {
             root.color = Color.BLACK;
         } else {
             insert(root, value);
+            root.color = Color.BLACK;
             root = rebalance(root);
         }
 
